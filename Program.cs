@@ -7,10 +7,15 @@ using PizzaStore.Models;
 
 // you create a builder, from there you create app instance
 var builder = WebApplication.CreateBuilder(args);
+// to enable db creation, set db connection string to migrate data model to sqlite db
+// This code checks the configuration provider for a connection string named Pizzas. If it doesn't find one, it will use Data Source=Pizzas.db as the connection string. SQLite will map this string to a file.
+var connectionString = builder.Configuration.GetConnectionString("Pizzas") ?? "Data Source=Pizzas.db";
 
     
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddDbContext<PizzaDb>(options => options.UseInMemoryDatabase("items"));
+// builder.Services.AddDbContext<PizzaDb>(options => options.UseInMemoryDatabase("items"));
+//replace in memory to db
+builder.Services.AddSqlite<PizzaDb>(connectionString);
 builder.Services.AddSwaggerGen(c =>
 {
      c.SwaggerDoc("v1", new OpenApiInfo { Title = "PizzaStore API", Description = "Making the Pizzas you love", Version = "v1" });
