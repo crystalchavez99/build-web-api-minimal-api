@@ -31,3 +31,6 @@ C:\Users\CChavez\Documents\Multiverse\11wk\build-web-api-minimal\PizzaStore\obj\
 C:\Users\CChavez\Documents\Multiverse\11wk\build-web-api-minimal\PizzaStore\obj\Debug\net8.0\PizzaStore.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\CChavez\Documents\Multiverse\11wk\build-web-api-minimal\PizzaStore\obj\Debug\net8.0\PizzaStore.sourcelink.json
 C:\Users\CChavez\Documents\Multiverse\11wk\build-web-api-minimal\PizzaStore\obj\Debug\net8.0\PizzaStore.csproj.CopyComplete
+C:\Users\CChavez\Documents\Multiverse\11wk\build-web-api-minimal\PizzaStore\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\CChavez\Documents\Multiverse\11wk\build-web-api-minimal\PizzaStore\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\CChavez\Documents\Multiverse\11wk\build-web-api-minimal\PizzaStore\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
